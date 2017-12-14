@@ -28,7 +28,7 @@ network={
 	ssid="YourRouterSSID"
 	psk="YourSecurePassword"
 	scan_ssid=1
-  key_mgmt=WPA-PSK
+	key_mgmt=WPA-PSK
 }
 ######################### EOF ###############################
 
