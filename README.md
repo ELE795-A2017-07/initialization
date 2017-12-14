@@ -30,4 +30,7 @@ network={
   key_mgmt=WPA-PSK
 }
 
-2) 
+2) Install softwares needed for the camera and OpenCV
+
+Everything was installed using this tutorial :
+https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/
