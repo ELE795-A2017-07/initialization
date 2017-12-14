@@ -43,5 +43,5 @@ SKIP PARTS ABOUT VIDEO PROCESSING
 
 [BUG]
 With the latest tutorial, packages were missing. You must install them.
-# sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+#sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 
