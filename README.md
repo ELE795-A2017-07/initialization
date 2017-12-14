@@ -41,3 +41,7 @@ SKIP PARTS ABOUT VIDEO PROCESSING
 - [Skip] OpenCv process video:
 - [Skip] GTK library for some GUI (graphical user interface) stuffs like viewing images:
 
+[BUG]
+With the latest tutorial, packages were missing. You must install them.
+# sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+
