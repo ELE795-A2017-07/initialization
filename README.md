@@ -37,8 +37,8 @@ network={
 I followed the steps 1-3 of this tutorial to prepare the camera :
 https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/
 
-- Install python 2.7.9 version using command:
-	- sudo apt-get install python2.7-dev
-- Install the python wrapper for OpenCV:
-	- sudo apt-get install libopencv-dev python-opencv python-picamera
+Install python 2.7.9 version using command:
+- sudo apt-get install python2.7-dev
+Install the python wrapper for OpenCV:
+- sudo apt-get install libopencv-dev python-opencv python-picamera
 
