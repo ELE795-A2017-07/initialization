@@ -34,14 +34,9 @@ network={
 
 2) Install softwares needed for the camera and OpenCV
 
-Everything was installed using this tutorial :
+I followed the steps 1-3 of this tutorial to prepare the camera :
 https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/
 
-SKIP PARTS ABOUT VIDEO PROCESSING
-- [Skip] OpenCv process video:
-- [Skip] GTK library for some GUI (graphical user interface) stuffs like viewing images:
-
-[BUG]
-With the latest tutorial, packages were missing. You must install them.
-- sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+Install python 2.7.9 version using command: sudo apt-get install python2.7-dev
+Install the python wrapper for OpenCV: sudo apt-get install libopencv-dev python-opencv python-picamera
 
