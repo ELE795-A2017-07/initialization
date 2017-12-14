@@ -22,6 +22,7 @@ NODE SETUP
  [wpa_supplicant.conf]
  
 ########## BEGINNING OF wpa_supplicant.conf #################
+
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 
 network={
@@ -30,6 +31,7 @@ network={
 	scan_ssid=1
 	key_mgmt=WPA-PSK
 }
+
 ######################### EOF ###############################
 
 2) Install softwares needed for the camera and OpenCV
