@@ -36,3 +36,8 @@ network={
 
 Everything was installed using this tutorial :
 https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/
+
+SKIP PARTS ABOUT VIDEO PROCESSING
+- [Skip] OpenCv process video:
+- [Skip] GTK library for some GUI (graphical user interface) stuffs like viewing images:
+
