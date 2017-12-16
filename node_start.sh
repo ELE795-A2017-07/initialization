@@ -9,6 +9,7 @@ NB_START_PER_DAY=72
 
 node_wd="/home/pi/workspace/"
 node_start_count_file="start_count.txt"
+cpp_filename="LeavesDetection"
 
 ################# VERIFICATIONS ################
 # If the working directory is missing
@@ -36,13 +37,19 @@ fi
 # We increase the number in the file
 echo $((start_count+1)) > $node_wd$node_start_count_file
 
-#################### CAMERA ####################
+########## CAMERA AND IMAGE DETECTION ########
 # The picture is taken once per day
 
 mod=$((start_count / NB_START_PER_DAY))
 if ((start_count % NB_START_PER_DAY == 0)); then
-	raspistill -vf -hf -o /home/pi/workspace/camera/vigne_$mod.jpg
+	raspistill -vf -hf -o $node_wd"camera/vigne_"$mod.jpg
+	cd $node_wd
+	cmake .
+	make
+	echo "./"$cpp_filename $node_wd"camera/vigne_"$mod.jpg
+	./$cpp_filename $node_wd"camera/vigne_"$mod.jpg
 fi
 
-##################### NODE #####################
-# Second, we start the C++ script to activate the node
+####################  ####################
+
+
