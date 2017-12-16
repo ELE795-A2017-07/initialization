@@ -36,11 +36,7 @@ network={
 
 2) Install softwares needed for the camera and OpenCV
 
-I followed the steps 1-3 of this tutorial to prepare the camera :
-https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/
+OpenCV was installed using this tutorial without the virtual environnement :
+https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
 
-Install python 2.7.9 version using command:
-- sudo apt-get install python2.7-dev
-Install the python wrapper for OpenCV:
-- sudo apt-get install libopencv-dev python-opencv python-picamera
 
