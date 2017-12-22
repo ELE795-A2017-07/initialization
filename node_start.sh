@@ -8,6 +8,7 @@
 NB_START_PER_DAY=72
 
 node_wd="/home/pi/workspace/"
+image_wd="image/"
 node_start_count_file="start_count.txt"
 cpp_filename="LeavesDetection"
 
@@ -19,9 +20,9 @@ if [ ! -d $node_wd ]; then
 fi
 
 # If the pictures directory is missing
-if [ ! -d $node_wd"camera" ]; then
-    mkdir $node_wd"camera"
-	echo "Creating camera directory: "$node_wd"camera"
+if [ ! -d $node_wd$image_wd"camera" ]; then
+    mkdir $node_wd$image_wd"camera"
+	echo "Creating camera directory: "$node_wd$image_wd"camera"
 fi
 
 # if it is the first time the node is started
@@ -42,14 +43,11 @@ echo $((start_count+1)) > $node_wd$node_start_count_file
 
 mod=$((start_count / NB_START_PER_DAY))
 if ((start_count % NB_START_PER_DAY == 0)); then
-	raspistill -vf -hf -o $node_wd"camera/vigne_"$mod.jpg
-	cd $node_wd
+	raspistill -vf -hf -o $node_wd$image_wd"camera/vigne_"$mod.jpg
+	cd $node_wd$image_wd
 	cmake .
 	make
-	echo "./"$cpp_filename $node_wd"camera/vigne_"$mod.jpg
-	./$cpp_filename $node_wd"camera/vigne_"$mod.jpg
+	./$cpp_filename $node_wd$image_wd"camera/vigne_"$mod.jpg
 fi
 
 ####################  ####################
-
-
