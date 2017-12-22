@@ -1,0 +1,2 @@
+# This file goes in the /boot partition of the micro SD card
+# to enable SSH on boot. It can be left empty.
